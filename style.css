@@ -1,0 +1,118 @@
+:root {
+  --bg: #F6F3EE;
+  --card: #FFFFFF;
+  --text: #3D3D3D;
+  --text-secondary: #6B6256;
+  --text-tertiary: #9C9485;
+  --accent: #8B7D6B;
+  --accent-dark: #6F6354;
+  --border: #E8E2D9;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.brand {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.brand .logo {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.brand .tagline {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  margin: 6px 0 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 0 8px;
+}
+
+.updated {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-bottom: 24px;
+}
+
+.lead {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+section { margin-top: 28px; }
+
+h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+section p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin: 0;
+  white-space: pre-line;
+}
+
+.nav {
+  text-align: center;
+  margin-top: 48px;
+  font-size: 14px;
+}
+
+.nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav a:hover { text-decoration: underline; }
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 32px;
+}
+
+.home-links a {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px 20px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.home-links a:hover { border-color: var(--accent); }
